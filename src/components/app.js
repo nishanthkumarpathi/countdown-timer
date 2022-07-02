@@ -91,7 +91,7 @@ const App = () => {
   return (
     <React.Fragment>
       <header>
-        <h1 className="header-item">Countdown Timer</h1>
+        <h1 className="header-item">Nishanth Kumar Pathi</h1>
         <div className="button-group header-item">
           <button type="button" className="button header-button clear" onClick={() => clearCountdown()}>Clear</button>
           <button type="button" className="button header-button settings" onClick={() => setModalVisibility(true)}>Settings</button>
@@ -101,7 +101,7 @@ const App = () => {
         {modalVisibility && <SettingsModal setModalVisibility={setModalVisibility} countdownSettings={countdownSettings} setCountdownSettings={setCountdownSettings} setEventName={setEventName} />}
         {countdownSettings.unixEndDate ? <Countdown countdownTimer={countdownTimer} unixEndDate={countdownSettings.unixEndDate} eventName={eventName} /> : <InfoMessage countdownInfoMessage={countdownInfoMessage} />}
       </main>
-      <footer>Created by <a href="https://autumnchris.github.io/portfolio" target="_blank">Autumn Bullard</a> &copy; {new Date().getFullYear()}</footer>
+      <footer>All rights reserved &copy; {new Date().getFullYear()}</footer>
     </React.Fragment>
   );
 }
